@@ -1,0 +1,22 @@
+{
+  "name": "comfama",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "workspaces": [
+    "api",
+    "app"
+  ],
+  "scripts": {
+    "build": "npm run build --workspace=app",
+    "start": "npm start --workspace=api",
+    "dev:api": "npm run build && npm run dev --workspace=api"
+  },
+  "devDependencies": {
+    "eslint": "^7.29.0",
+    "eslint-config-airbnb": "^18.2.1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
