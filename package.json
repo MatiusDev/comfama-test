@@ -8,7 +8,7 @@
     "app"
   ],
   "engines": {
-    "npm": "7.19.0",
+    "npm": "7.19.0"
   },
   "scripts": {
     "build": "npm run build --workspace=app",
