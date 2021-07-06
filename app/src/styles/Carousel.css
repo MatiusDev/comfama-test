@@ -1,0 +1,54 @@
+.carousel {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.carousel__listitems {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 95vw;
+}
+
+.carousel__menu {
+  position: absolute;
+  left: 5px;
+  z-index: 100;
+  width: calc(100% - 10px);
+  height: 100%;
+  pointer-events: none;
+}
+
+.carousel__menu button {
+  pointer-events: all;
+  font-family: monospace;
+  font-size: 45px;
+  font-weight: bold;
+  color: #fff;
+  background-color: transparent;
+  cursor: pointer;
+  width: 50px;
+  height: 100%;
+  text-align: center;
+  position: absolute;
+}
+
+.carousel__menu-right:hover {
+  background: linear-gradient(to right, transparent, #111111eb);
+}
+
+.carousel__menu-left:hover {
+  background: linear-gradient(to left, transparent, #111111eb);
+}
+
+.carousel__menu-right {
+  right: 0;
+}
+
+@media screen and (max-width: 700px) {
+  .carousel__menu button {
+    font-size: 40px;
+  }
+}

@@ -1,0 +1,98 @@
+.search {
+  margin-top: 60px;
+}
+
+.search__input {
+  width: 65%;
+  height: 48px;
+  position: relative;
+  margin: 0 auto 48px;
+}
+
+.search input {
+  background-color: #2A2A2ACF;
+  border: 2px solid #717171;
+  border-radius: 15px;
+  color: #A5A5A5;
+  width: 100%;
+  height: 100%;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 18px;
+  padding: 20px 20px;
+  position: absolute;
+}
+
+.search input::placeholder {
+  color: #818181;
+  letter-spacing: 1px;
+}
+
+.search button {
+  background-color: transparent;
+  border-left: 2px solid #717171;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+  cursor: pointer;
+  color: #818181;
+  display: none;
+  height: 100%;
+  font-family: monospace;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 20px 10px 15px;
+  position: absolute;
+  right: 0;
+}
+
+.search button:hover {
+  color: #A5A5A5;
+}
+
+.search__listitems {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.search__item {
+  position: relative;
+  margin: 5px;
+  min-height: 300px;
+  min-width: 225px;
+}
+
+.search__item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.search__item:hover .search__item-content {
+  display: block;
+}
+
+.search__item:hover .search__item-recommendation {
+  display: none;
+}
+
+.search__item-content {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  background-color: #2A2A2ACF;
+  color: #C4C4C4;
+  display: none;
+}
+
+.search__item-recommendation {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: #2A2A2ACF;
+  color: #C4C4C4;
+  font-size: 15px;
+  text-align: center;
+}
